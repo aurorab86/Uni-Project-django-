@@ -116,6 +116,10 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 # 정적 파일 설정
 STATIC_URL = '/static/'
 
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
+STATIC_DIR = os.path.join(BASE_DIR, 'static')
+
 # 정적 파일 디렉토리 추가
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static'),
